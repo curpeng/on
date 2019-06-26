@@ -1,0 +1,16 @@
+staging: &staging
+  host: test.salesforce.com
+  username: info@on-running.com.uat
+  password: GeLBtNwepDWcRTgBGbeJC4ih
+  security_token: Q7snSaWbckFQ3ztnnKAwCgyXK
+  client_id: 3MVG9X0_oZyBSzHrnzENhROatHANvJ4OpqP15wOTK_bPNYRLhnl1BPVUXJVtIj.wFVemk.A7fEgZc.FpxpEf8
+  client_secret: 01B5A57058026129C4EDF080498A71ACB34B768ED316B85CE5ED3E72DC316E5F
+
+development:
+  <<: *staging
+
+test:
+  <<: *staging
+
+production:
+  <<: *staging

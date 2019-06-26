@@ -1,0 +1,8 @@
+<%= javascript_pack_tag 'dealers_app' %>
+
+<div class="dealers-app">
+  <%= content_tag :div,
+    id: "dealers-app",
+    data: @dealers.to_json do %>
+  <% end %>
+</div>
